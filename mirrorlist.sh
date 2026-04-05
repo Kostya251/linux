@@ -1,0 +1,14 @@
+#!/bin/bash
+rm -rf /etc/pacman.d/mirrorlist
+cat <<EOF > /etc/pacman.d/mirrorlist
+Server = https://mirror.yandex.ru/archlinux/$repo/os/$arch
+Server = https://mirror.kamtv.ru/archlinux/$repo/os/$arch
+Server = https://mirror.kpfu.ru/archlinux/$repo/os/$arch
+Server = https://mirror.murmellow.lol/archlinux/$repo/os/$arch
+Server = https://mirror.nw-sys.ru/archlinux/$repo/os/$arch
+Server = https://repository.su/archlinux/$repo/os/$arch
+Server = https://web.sketserv.ru/archlinux/$repo/os/$arch
+Server = https://mirror.truenetwork.ru/archlinux/$repo/os/$arch
+Server = https://vlst.su/archlinux/$repo/os/$arch
+EOF
+
